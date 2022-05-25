@@ -50,6 +50,7 @@ export const Container = styled.div`
         height: 270px;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         border: solid 3px;
         border-image: linear-gradient(45deg, ${props => props.theme.colors.secondary}, ${props => props.theme.colors.primary}) 1;
@@ -59,7 +60,7 @@ export const Container = styled.div`
         transition: ease-in-out all 0.5s;
 
         :hover {
-          height: 275px;
+          height: 285px;
         }
 
         h3 {

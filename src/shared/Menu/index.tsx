@@ -7,7 +7,8 @@ interface IProps {
 export const Menu = ({ open }: IProps) => {
   return (
     <Container style={{transform: open ? 'translateX(0)' : 'translateX(+100%)'}}>
-      <a onClick={() => window.scrollTo(0, 0)}>
+      <a href='#'
+        onClick={() => window.scrollTo(0, 0)}>
         <span aria-label="home">
           INÍCIO
         </span>

@@ -36,15 +36,35 @@ export const Container = styled.div`
     p {
       text-align: center;
       font-size: 1.5rem;
+
+      @media screen and (max-width: 425px) {
+        font-size: 1.3rem;
+      }
+      
+      @media screen and (max-width: 374px) {
+        font-size: 1.1rem;
+      }
     }
 
     .links {
       display: flex;
-      flex-wrap: wrap;
       margin-top: 30px;
+
       svg {
         font-size: 5rem;
         color:  ${props => props.theme.colors.secondary};
+      }
+
+      .first-group {
+        display: flex;
+      }
+
+      .second-group {
+        display: flex;
+      }
+
+      @media screen and (max-width: 495px) {
+        flex-direction: column;
       }
     }
   }

@@ -12,18 +12,21 @@ export const Navbar = () => {
     <Container>
       <div className='wrapper'>
         <button onClick={() => window.scrollTo(0, 0)}>
-          <img
-            src={'/svgs/logo-small.svg'}
-            alt='Logotipo com as letras AC Dev'
-            className='logo'
-          />
+          <a href="#">
+            <img
+              src={'/svgs/logo-small.svg'}
+              alt='Logotipo com as letras AC Dev'
+              className='logo'
+            />
+          </a>
         </button>
         <div>
           <Burguer open={open} setOpen={setOpen} />
           <Menu open={open}/>
         </div>
         <div className='menu'>
-          <a onClick={() => window.scrollTo(0, 0)}>INÍCIO</a>
+          <a href='#'
+            onClick={() => window.scrollTo(0, 0)}>INÍCIO</a>
           <a href='#sobre'>SOBRE</a>
           <a href='#skills'>SKILLS</a>
           <a href='#projetos'>PROJETOS</a>

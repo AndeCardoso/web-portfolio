@@ -45,11 +45,13 @@ const Home: NextPage = () => {
       </S.Main>
       <S.Footer>
         <button onClick={() => window.scrollTo(0, 0)}>
-          <img
-            src={'/svgs/logo-small.svg'}
-            alt='Logotipo com as letras AC Dev'
-            className='logo'
-          />
+          <a href="#">
+            <img
+              src={'/svgs/logo-small.svg'}
+              alt='Logotipo com as letras AC Dev'
+              className='logo'
+            />
+          </a>
         </button>
         <div className='wrapper'>
           <span>Copyright © {year}</span>
