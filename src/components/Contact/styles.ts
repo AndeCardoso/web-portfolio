@@ -40,6 +40,7 @@ export const Container = styled.div`
 
     .links {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 30px;
       svg {
         font-size: 5rem;
